@@ -29,11 +29,8 @@ from nototools import font_data
 from nototools import tool_utils
 from nototools import ttc_utils
 
-# Characters supported in Noto CJK fonts that UTR #51 recommends default to
-# emoji-style.
 EMOJI_IN_CJK = {
     0x26BD, # ⚽ SOCCER BALL
-    0x26BE, # ⚾ BASEBALL
     0x1F18E, # 🆎 NEGATIVE SQUARED AB
     0x1F191, # 🆑 SQUARED CL
     0x1F192, # 🆒 SQUARED COOL
@@ -46,8 +43,6 @@ EMOJI_IN_CJK = {
     0x1F199, # 🆙 SQUARED UP WITH EXCLAMATION MARK
     0x1F19A, # 🆚 SQUARED VS
     0x1F201, # 🈁 SQUARED KATAKANA KOKO
-    0x1F21A, # 🈚 SQUARED CJK UNIFIED IDEOGRAPH-7121
-    0x1F22F, # 🈯 SQUARED CJK UNIFIED IDEOGRAPH-6307
     0x1F232, # 🈲 SQUARED CJK UNIFIED IDEOGRAPH-7981
     0x1F233, # 🈳 SQUARED CJK UNIFIED IDEOGRAPH-7A7A
     0x1F234, # 🈴 SQUARED CJK UNIFIED IDEOGRAPH-5408
@@ -60,18 +55,8 @@ EMOJI_IN_CJK = {
     0x1F251, # 🉑 CIRCLED IDEOGRAPH ACCEPT
 }
 
-# Characters we have decided we are doing as emoji-style in Android,
-# despite UTR #51's recommendation
 ANDROID_EMOJI = {
-    0x2600, # ☀ BLACK SUN WITH RAYS
-    0x2601, # ☁ CLOUD
-    0X260E, # ☎ BLACK TELEPHONE
-    0x261D, # ☝ WHITE UP POINTING INDEX
     0x263A, # ☺ WHITE SMILING FACE
-    0x2660, # ♠ BLACK SPADE SUIT
-    0x2663, # ♣ BLACK CLUB SUIT
-    0x2665, # ♥ BLACK HEART SUIT
-    0x2666, # ♦ BLACK DIAMOND SUIT
     0x270C, # ✌ VICTORY HAND
     0x2744, # ❄ SNOWFLAKE
     0x2764, # ❤ HEAVY BLACK HEART
