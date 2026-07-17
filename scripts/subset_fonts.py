@@ -30,7 +30,6 @@ from nototools import tool_utils
 from nototools import ttc_utils
 
 EMOJI_IN_CJK = {
-    0x26BD, # ⚽ SOCCER BALL
     0x1F18E, # 🆎 NEGATIVE SQUARED AB
     0x1F191, # 🆑 SQUARED CL
     0x1F192, # 🆒 SQUARED COOL
